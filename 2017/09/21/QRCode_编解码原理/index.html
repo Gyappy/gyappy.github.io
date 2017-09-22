@@ -238,7 +238,7 @@
 
     
         <meta property="article:published_time" content="Thu Sep 21 2017 00:50:33 GMT+0000" />
-        <meta property="article:modified_time" content="Fri Sep 22 2017 08:29:37 GMT+0000" />
+        <meta property="article:modified_time" content="Fri Sep 22 2017 08:44:36 GMT+0000" />
     
 
     <!-- The Twitter Card protocol -->
@@ -265,7 +265,7 @@
     "mainEntityOfPage": "http://yoursite.com/2017/09/21/QRCode_编解码原理/index.html",
     "headline": "QRCode专题--编解码原理",
     "datePublished": "Thu Sep 21 2017 00:50:33 GMT+0000",
-    "dateModified": "Fri Sep 22 2017 08:29:37 GMT+0000",
+    "dateModified": "Fri Sep 22 2017 08:44:36 GMT+0000",
     "author": {
         "@type": "Person",
         "name": "GuChenhui",
@@ -349,7 +349,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#目录"><span class="post-toc-number">1.</span> <span class="post-toc-text">目录</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#背景与前言"><span class="post-toc-number">1.0.0.0.1.</span> <span class="post-toc-text">背景与前言</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#前置知识"><span class="post-toc-number">1.0.0.0.2.</span> <span class="post-toc-text">前置知识</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#encode"><span class="post-toc-number">1.0.0.0.3.</span> <span class="post-toc-text">encode</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#decode"><span class="post-toc-number">1.0.0.0.4.</span> <span class="post-toc-text">decode</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#背景与前言-1"><span class="post-toc-number">2.</span> <span class="post-toc-text">背景与前言</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#前置知识-1"><span class="post-toc-number">3.</span> <span class="post-toc-text">前置知识</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#不同码制"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">不同码制:</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#根据原理分类"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">根据原理分类:</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#堆叠式-行排式"><span class="post-toc-number">3.2.1.</span> <span class="post-toc-text">堆叠式/行排式:</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#矩阵式"><span class="post-toc-number">3.2.2.</span> <span class="post-toc-text">矩阵式:</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#尺寸"><span class="post-toc-number">3.3.</span> <span class="post-toc-text">尺寸:</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#信息容积"><span class="post-toc-number">3.4.</span> <span class="post-toc-text">信息容积:</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#格式信息"><span class="post-toc-number">3.5.</span> <span class="post-toc-text">格式信息:</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#容错："><span class="post-toc-number">3.6.</span> <span class="post-toc-text">容错：</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#结构图"><span class="post-toc-number">3.7.</span> <span class="post-toc-text">结构图:</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#encode-1"><span class="post-toc-number">4.</span> <span class="post-toc-text">encode</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#数据分析"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">数据分析:</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#数据编码"><span class="post-toc-number">4.2.</span> <span class="post-toc-text">数据编码:</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#Numeric-mode-数字编码"><span class="post-toc-number">4.2.0.1.</span> <span class="post-toc-text">Numeric mode|数字编码:</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#Alphanumeriv-mode-字符编码-0-9-A-Z-以及一些符号和空格。"><span class="post-toc-number">4.2.0.2.</span> <span class="post-toc-text">Alphanumeriv mode|字符编码:0~9,A~Z,以及一些符号和空格。</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#Byte-mode-字节编码"><span class="post-toc-number">4.2.0.3.</span> <span class="post-toc-text">Byte mode|字节编码:</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#Mixing-mode-混合编码"><span class="post-toc-number">4.2.0.4.</span> <span class="post-toc-text">Mixing mode|混合编码</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#纠错编码"><span class="post-toc-number">4.3.</span> <span class="post-toc-text">纠错编码</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#纠错算法"><span class="post-toc-number">4.3.0.1.</span> <span class="post-toc-text">纠错算法:</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#构造最终数据信息"><span class="post-toc-number">4.4.</span> <span class="post-toc-text">构造最终数据信息</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#构造矩阵"><span class="post-toc-number">4.5.</span> <span class="post-toc-text">构造矩阵</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#打上掩码"><span class="post-toc-number">4.6.</span> <span class="post-toc-text">打上掩码</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#填充格式与版本信息"><span class="post-toc-number">4.7.</span> <span class="post-toc-text">填充格式与版本信息</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#decode-1"><span class="post-toc-number">5.</span> <span class="post-toc-text">decode</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#下节预告"><span class="post-toc-number">6.</span> <span class="post-toc-text">下节预告</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#里德-所罗门纠错算法"><span class="post-toc-number">6.1.</span> <span class="post-toc-text">里德-所罗门纠错算法</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#zxing源码"><span class="post-toc-number">6.2.</span> <span class="post-toc-text">zxing源码</span></a></li></ol></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#目录"><span class="post-toc-number">1.</span> <span class="post-toc-text">目录</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#背景与前言"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">背景与前言</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#前置知识"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">前置知识</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#encode"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">encode</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#decode"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">decode</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#下节预告"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">下节预告</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#背景与前言-1"><span class="post-toc-number">2.</span> <span class="post-toc-text">背景与前言</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#前置知识-1"><span class="post-toc-number">3.</span> <span class="post-toc-text">前置知识</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#不同码制"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">不同码制:</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#根据原理分类"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">根据原理分类:</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#堆叠式-行排式"><span class="post-toc-number">3.2.1.</span> <span class="post-toc-text">堆叠式/行排式:</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#矩阵式"><span class="post-toc-number">3.2.2.</span> <span class="post-toc-text">矩阵式:</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#尺寸"><span class="post-toc-number">3.3.</span> <span class="post-toc-text">尺寸:</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#信息容积"><span class="post-toc-number">3.4.</span> <span class="post-toc-text">信息容积:</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#格式信息"><span class="post-toc-number">3.5.</span> <span class="post-toc-text">格式信息:</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#容错："><span class="post-toc-number">3.6.</span> <span class="post-toc-text">容错：</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#结构图"><span class="post-toc-number">3.7.</span> <span class="post-toc-text">结构图:</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#encode-1"><span class="post-toc-number">4.</span> <span class="post-toc-text">encode</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#数据分析"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">数据分析:</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#数据编码"><span class="post-toc-number">4.2.</span> <span class="post-toc-text">数据编码:</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Numeric-mode-数字编码"><span class="post-toc-number">4.2.1.</span> <span class="post-toc-text">Numeric mode|数字编码:</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Alphanumeriv-mode-字符编码-0-9-A-Z-以及一些符号和空格。"><span class="post-toc-number">4.2.2.</span> <span class="post-toc-text">Alphanumeriv mode|字符编码:0~9,A~Z,以及一些符号和空格。</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Byte-mode-字节编码"><span class="post-toc-number">4.2.3.</span> <span class="post-toc-text">Byte mode|字节编码:</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Mixing-mode-混合编码"><span class="post-toc-number">4.2.4.</span> <span class="post-toc-text">Mixing mode|混合编码</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#纠错编码"><span class="post-toc-number">4.3.</span> <span class="post-toc-text">纠错编码</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#纠错算法"><span class="post-toc-number">4.3.1.</span> <span class="post-toc-text">纠错算法:</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#构造最终数据信息"><span class="post-toc-number">4.4.</span> <span class="post-toc-text">构造最终数据信息</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#构造矩阵"><span class="post-toc-number">4.5.</span> <span class="post-toc-text">构造矩阵</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#打上掩码"><span class="post-toc-number">4.6.</span> <span class="post-toc-text">打上掩码</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#填充格式与版本信息"><span class="post-toc-number">4.7.</span> <span class="post-toc-text">填充格式与版本信息</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#decode-1"><span class="post-toc-number">5.</span> <span class="post-toc-text">decode</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#下节预告-1"><span class="post-toc-number">6.</span> <span class="post-toc-text">下节预告</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#里德-所罗门纠错算法"><span class="post-toc-number">6.1.</span> <span class="post-toc-text">里德-所罗门纠错算法</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#zxing源码"><span class="post-toc-number">6.2.</span> <span class="post-toc-text">zxing源码</span></a></li></ol></li></ol>
     </ul>
     
 
@@ -492,7 +492,14 @@
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
         <p><img src="http://jietu-10024907.file.myqcloud.com/ktarmrsfgrqdomiihyewsqoumwvzpsah.jpg" alt=""></p>
-<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><h6 id="背景与前言"><a href="#背景与前言" class="headerlink" title="背景与前言"></a>背景与前言</h6><h6 id="前置知识"><a href="#前置知识" class="headerlink" title="前置知识"></a>前置知识</h6><h6 id="encode"><a href="#encode" class="headerlink" title="encode"></a>encode</h6><h6 id="decode"><a href="#decode" class="headerlink" title="decode"></a>decode</h6><h2 id="背景与前言-1"><a href="#背景与前言-1" class="headerlink" title="背景与前言"></a>背景与前言</h2><p>  开篇先给看官道个歉，对不起，这是标题党，没有抉奥阐幽，也没有天地一指，万物一马的梗概与剖析。本文是笔者在维护公司二维码扫描库时，被叫成二维码master，但大都局限于应用层一些UI改动和接口调整，是兔丝燕麦般的master.于是不堪受辱，业余时间研究学习了二维码相关的知识，然后总结出的一些粗浅认识.顺便说一句,本文篇幅短小,看完它的时间只比你闭气不呼吸能坚持的时间稍微长一点。</p>
+<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul>
+<li><h3 id="背景与前言"><a href="#背景与前言" class="headerlink" title="背景与前言"></a>背景与前言</h3></li>
+<li><h3 id="前置知识"><a href="#前置知识" class="headerlink" title="前置知识"></a>前置知识</h3></li>
+<li><h3 id="encode"><a href="#encode" class="headerlink" title="encode"></a>encode</h3></li>
+<li><h3 id="decode"><a href="#decode" class="headerlink" title="decode"></a>decode</h3></li>
+<li><h3 id="下节预告"><a href="#下节预告" class="headerlink" title="下节预告"></a>下节预告</h3></li>
+</ul>
+<h2 id="背景与前言-1"><a href="#背景与前言-1" class="headerlink" title="背景与前言"></a>背景与前言</h2><p>  开篇先给看官道个歉，对不起，这是标题党，没有抉奥阐幽，也没有天地一指，万物一马的梗概与剖析。本文是笔者在维护公司二维码扫描库时，被叫成二维码master，但大都局限于应用层一些UI改动和接口调整，是兔丝燕麦般的master.于是不堪受辱，业余时间研究学习了二维码相关的知识，然后总结出的一些粗浅认识.顺便说一句,本文篇幅短小,看完它的时间只比你闭气不呼吸能坚持的时间稍微长一点。</p>
 <p>  有任何问题和指导建议,可以联系我讨论:416676773@qq.com 或者 guchenhui1993@gmail.com</p>
 <h2 id="前置知识-1"><a href="#前置知识-1" class="headerlink" title="前置知识"></a>前置知识</h2><ul>
 <li><h3 id="不同码制"><a href="#不同码制" class="headerlink" title="不同码制:"></a>不同码制:</h3>Data Matrix,MaxiCode, Aztec,QR Code, Vericode,PDF417,Ultracode,Code 49,Code 16K等</li>
@@ -557,7 +564,7 @@
 <p>先看看不同version下数据长度对应的编码的位数约定:</p>
 <p><img src="http://jietu-10024907.file.myqcloud.com/vkjytdumvleazllykrqiznaacybbuuxz.jpg" alt=""><br>支持如下编码:</p>
 <ul>
-<li><h5 id="Numeric-mode-数字编码"><a href="#Numeric-mode-数字编码" class="headerlink" title="Numeric mode|数字编码:"></a>Numeric mode|数字编码:</h5><p>数据类型编码(4位)+数据长度编码(根据version转成10或12或14位二进制数)+从左到右,<br>每3个数字为一组,转成10位二进制数,剩下不满三位的转成4或7位二进制数。</p>
+<li><h4 id="Numeric-mode-数字编码"><a href="#Numeric-mode-数字编码" class="headerlink" title="Numeric mode|数字编码:"></a>Numeric mode|数字编码:</h4><p>数据类型编码(4位)+数据长度编码(根据version转成10或12或14位二进制数)+从左到右,<br>每3个数字为一组,转成10位二进制数,剩下不满三位的转成4或7位二进制数。</p>
 <p>比如1314520:</p>
 <ul>
 <li>131 452 0</li>
@@ -568,18 +575,18 @@
 </ul>
 <p>公式B=4+C+10(D DIV 3)+R.</p>
 </li>
-<li><h5 id="Alphanumeriv-mode-字符编码-0-9-A-Z-以及一些符号和空格。"><a href="#Alphanumeriv-mode-字符编码-0-9-A-Z-以及一些符号和空格。" class="headerlink" title="Alphanumeriv mode|字符编码:0~9,A~Z,以及一些符号和空格。"></a>Alphanumeriv mode|字符编码:0~9,A~Z,以及一些符号和空格。</h5><p>编码方式和数字编码类似,区别是以2个字符为一组,转成11位二进制数,不满2个字符的转成6位。(a,b)–&gt;a*45+b–&gt;binary</p>
+<li><h4 id="Alphanumeriv-mode-字符编码-0-9-A-Z-以及一些符号和空格。"><a href="#Alphanumeriv-mode-字符编码-0-9-A-Z-以及一些符号和空格。" class="headerlink" title="Alphanumeriv mode|字符编码:0~9,A~Z,以及一些符号和空格。"></a>Alphanumeriv mode|字符编码:0~9,A~Z,以及一些符号和空格。</h4><p>编码方式和数字编码类似,区别是以2个字符为一组,转成11位二进制数,不满2个字符的转成6位。(a,b)–&gt;a*45+b–&gt;binary</p>
 <p>公式B = 4 + C + 11(D DIV 2) + 6(D MOD 2).</p>
 </li>
 </ul>
 <p><img src="http://jietu-10024907.file.myqcloud.com/qjyzvplczaelpabyobajdvdeuqdrilso.jpg" alt=""></p>
 <ul>
-<li><h5 id="Byte-mode-字节编码"><a href="#Byte-mode-字节编码" class="headerlink" title="Byte mode|字节编码:"></a>Byte mode|字节编码:</h5><p>公式B = 4 + C + 8D.</p>
+<li><h4 id="Byte-mode-字节编码"><a href="#Byte-mode-字节编码" class="headerlink" title="Byte mode|字节编码:"></a>Byte mode|字节编码:</h4><p>公式B = 4 + C + 8D.</p>
 </li>
 </ul>
 <p><img src="http://jietu-10024907.file.myqcloud.com/sawgmkdfbpnsfkdstcdxujkvxpefvrlv.jpg" alt=""></p>
 <ul>
-<li><h5 id="Mixing-mode-混合编码"><a href="#Mixing-mode-混合编码" class="headerlink" title="Mixing mode|混合编码"></a>Mixing mode|混合编码</h5><p>各种类型的组合编码。</p>
+<li><h4 id="Mixing-mode-混合编码"><a href="#Mixing-mode-混合编码" class="headerlink" title="Mixing mode|混合编码"></a>Mixing mode|混合编码</h4><p>各种类型的组合编码。</p>
 </li>
 </ul>
 <p><img src="http://jietu-10024907.file.myqcloud.com/evlvagdjgzfdtzlvqgivhwlxqzaylvvo.jpg" alt=""></p>
@@ -596,12 +603,12 @@
 <ul>
 <li><h3 id="纠错编码"><a href="#纠错编码" class="headerlink" title="纠错编码"></a>纠错编码</h3><p>为了能被纠错算法处理,将解析出的码字序列分块。然后把纠错码字拼到数据码字后面。有上文提到的L,M,Q,H四种纠错级别.</p>
 <ul>
-<li><h5 id="纠错算法"><a href="#纠错算法" class="headerlink" title="纠错算法:"></a>纠错算法:</h5><p>可纠正两种类型的错误,拒读错误(错误码字的位置已知)和替代错误(错误码字的位置未知).拒读错误是没有扫描到或者无法译码的字符,替代错误是错误译码的字符。一个替代错误需要两个纠错码字来纠正。</p>
+<li><h4 id="纠错算法"><a href="#纠错算法" class="headerlink" title="纠错算法:"></a>纠错算法:</h4><p>可纠正两种类型的错误,拒读错误(错误码字的位置已知)和替代错误(错误码字的位置未知).拒读错误是没有扫描到或者无法译码的字符,替代错误是错误译码的字符。一个替代错误需要两个纠错码字来纠正。</p>
 <p>这里有个公式：e + 2t &lt;= d - p</p>
 <p>e:拒读错误数 t:替代错误数 d:纠错码字数 p:错误译码保护码字</p>
 <p>主要通过<a href="https://en.wikipedia.org/wiki/Reed%E2%80%93Solomon_error_correction" title="里德-所罗门纠错算法" target="_blank" rel="external">里德-所罗门纠错算法</a> 来实现。<br>涉及到伽罗瓦域中的多项式算法等数学理论。这边还需要深入学习。写个//TODO_NEXT_TIME</p>
 <p>官方的除法电路图示是这样的:</p>
-<p><img src="http://jietu-10024907.file.myqcloud.com/lqcuilltjvbmxvxqkvkolrouzixstnyi.jpg" alt=""></p>
+<p><img src="http://jietu-10024907.file.myqcloud.com/lqcuilltjvbmxvxqkvkolrouzixstnyi.jpg" alt=""> </p>
 </li>
 </ul>
 </li>
@@ -661,7 +668,7 @@
 <li>使用纠错码字进行错误检查,并纠错</li>
 <li>解码数据码字</li>
 </ul>
-<h2 id="下节预告"><a href="#下节预告" class="headerlink" title="下节预告"></a>下节预告</h2><ul>
+<h2 id="下节预告-1"><a href="#下节预告-1" class="headerlink" title="下节预告"></a>下节预告</h2><ul>
 <li><h3 id="里德-所罗门纠错算法"><a href="#里德-所罗门纠错算法" class="headerlink" title="里德-所罗门纠错算法"></a>里德-所罗门纠错算法</h3></li>
 <li><h3 id="zxing源码"><a href="#zxing源码" class="headerlink" title="zxing源码"></a>zxing源码</h3></li>
 </ul>
